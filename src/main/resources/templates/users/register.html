@@ -10,9 +10,9 @@
 	<h2>新規ユーザー登録</h2>
 
 	<form method="post" th:action="@{/users/register}" th:object="${users}">
-		<label>ID(VARCHAR):<input type="text" th:filed="*{id}"></label><br>
-		<label>名前(VARCHAR):<input type="text" th:field="*{name}"></label><br>
-		<label>年齢(INT):<input type="text" th:field="*{age}"></label><br>
+		<label>ID(VARCHAR):<input type="text" name="id"></label><br>
+		<label>名前(VARCHAR):<input type="text" name="field"></label><br>
+		<label>年齢(INT):<input type="text" name="age"></label><br>
 
 		<button>新規作成</button>
 	</form>
