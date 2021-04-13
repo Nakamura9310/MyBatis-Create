@@ -41,7 +41,8 @@ public class UController {
 	
 	//top→[新規作成ボタン]押下 th:hrefにより生成されたURLをGETで表示
 	@GetMapping("/register")
-	public String registerUser(@ModelAttribute User u) {
+	public String registerUser(Model m, @ModelAttribute User u) {
+		m.addAttribute("users", u);
 		return "users/register";
 	}
 	
